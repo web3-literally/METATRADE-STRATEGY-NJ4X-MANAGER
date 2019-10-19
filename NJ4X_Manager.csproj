@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51D53F0E-541B-42BB-AC1F-EB3859A2937E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nj4x_Manager</RootNamespace>
+    <AssemblyName>Nj4x_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DarkUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DarkUI.1.0.0.1\lib\DarkUI.dll</HintPath>
+    </Reference>
+    <Reference Include="EngineIoClientDotNet, Version=0.9.22.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EngineIoClientDotNet.0.9.22\lib\net45\EngineIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Barcode, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Chart, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Diagram, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Diagram.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Grid, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Host.WinBase, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Host.WinBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Host.WinForm, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Host.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Host.Wpf, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Host.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Presentation, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Schedule, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Text, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.WinFormControls, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.WinFormControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.WpfControls, Version=17.5.29.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL">
+      <HintPath>packages\NevronOpenVision.17.5.29.12\lib\net40\Nevron.Nov.WpfControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nj4x">
+      <HintPath>C:\Program Files (x86)\nj4x\NJ4X Forex API (v2.8.6-P5)\dev\nj4x.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\NLog.4.6.7\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIoClientDotNet, Version=0.9.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SocketIoClientDotNet.0.9.13\lib\net45\SocketIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Office2016Theme.WinForms, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Office2016Theme.WinForms.17.3.0.14\lib\net46\Syncfusion.Office2016Theme.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.WebSockets, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.WebSockets.4.3.0\lib\net46\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebSocket4Net, Version=0.14.1.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>packages\WebSocket4Net.0.14.1\lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainController.cs" />
+    <Compile Include="MT_Manager.cs" />
+    <Compile Include="NJ4XServer_Observer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socket_Manager.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\MTAccount.datasource" />
+    <None Include="Properties\DataSources\MT_Manager.datasource" />
+    <None Include="Properties\DataSources\NJ4XServer.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
